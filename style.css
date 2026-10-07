@@ -1,15 +1,17 @@
 :root{
---cor-fundo:#5600f5;
+--cor-fundo:#FFFFFF;
 --cor-texto:#222222;
-
-
-
-
-
-
-
+--cor--principal:#6b2d5c;
+--cor-secundaria:#4524BD;
+--cor-hover:#002584;
+--cor-superficie:#6C330F;
+--cor-card:#0A582C;
+--cor-legenda:#065075;
+--cor-clara:#0A009C;
+--cor-rodape:#34009C;
 
 }
+
 
 body{
     background-color: var(--cor-fundo);
@@ -19,8 +21,8 @@ body{
 }
 
 header {
-    background-color: #ec0000;
-    color: white;
+    background-color:(--cor--principal);
+    color:var(--cor-clara);
     text-align: center;
     padding: 30px;
 }
@@ -30,9 +32,7 @@ h1 {
 }
 
 h2 {
-    color: #000000;
-}
-
+    color: var( --cor--principal);}
 p {
     font-size: 18px;
     line-height: 1.6;
@@ -44,7 +44,7 @@ main {
 }
 
 section {
-    background-color: rgb(253, 252, 252);
+    background-color: var(--cor-superficie);
     margin: 20px 0;
     padding: 20px;
     border-radius: 12px;
@@ -61,13 +61,13 @@ img {
 figcaption {
     text-align: center;
     font-size: 14px;
-    color: #555555;
+    color:var(--cor-legenda);
     margin-top: 8px;
 }
 
 button {
-    background-color: green;
-    color: red;
+    background-color: var(--cor--principal);
+    color: var(--cor-clara);
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -76,8 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: aquamarine;
-
+    background-color: var(--cor-hover);
 }
 
 .curtir {
